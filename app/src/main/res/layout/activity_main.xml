@@ -6,6 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_view"
+        android:background="?colorOnPrimary"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:elevation="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:navGraph="@navigation/main_nav_graph" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_container_view"
+        android:layout_width="match_parent"
+        app:menu="@menu/nav_menu"
+        app:labelVisibilityMode="selected"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/incl_progress"
+        layout="@layout/layout_progress"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/bottom_navigation_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
