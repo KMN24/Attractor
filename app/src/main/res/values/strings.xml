@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Attractor</string>
+    <string name="server_error">Ошибка сервера</string>
+    <string name="no_internet">Интернет содинение отсутствует</string>
 </resources>
