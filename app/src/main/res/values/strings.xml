@@ -10,4 +10,6 @@
     <string name="doctoral">Докторант</string>
     <string name="undefined">Неизвестно</string>
     <string name="work_experience">Опыт работы</string>
+    <string name="add_photo">Добавить фото</string>
+    <string name="select_pictures">Выберите картинки</string>
 </resources>
