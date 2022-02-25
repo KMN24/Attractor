@@ -6,9 +6,7 @@ import androidx.annotation.StringRes
 import com.google.android.material.snackbar.Snackbar
 
 
-val fragmentsToHideBottomNavOn = hashSetOf(
--1
-)
+
 
 fun Activity.snackbar(
     message: String,
