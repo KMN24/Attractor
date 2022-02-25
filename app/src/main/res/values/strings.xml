@@ -4,4 +4,10 @@
     <string name="no_internet">Интернет содинение отсутствует</string>
     <string name="main">Профиль</string>
     <string name="pictures">Картинки</string>
+    <string name="high_school">Школьник</string>
+    <string name="bachelor">Бакалавр: 3 курс</string>
+    <string name="master">Магистрант</string>
+    <string name="doctoral">Докторант</string>
+    <string name="undefined">Неизвестно</string>
+    <string name="work_experience">Опыт работы</string>
 </resources>
